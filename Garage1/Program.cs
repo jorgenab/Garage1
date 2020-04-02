@@ -6,7 +6,15 @@ namespace Garage1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Garage<Vehicle> garage = new Garage<Vehicle>();
+            UserInterface ui = new UserInterface();
+            GarageHandler garageHandler = new GarageHandler();
+            IHandler iHandler;
+            Airplane airplane;
+            Motorcycle motorcycle;
+            Car car;
+            Bus bus;
+            Boat boat;
         }
     }
 }
