@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace Garage1
 {
     internal class Garage<T> : IEnumerable<T> where T : Vehicle
     {
         private Vehicle[] vehicles;
-        int capacity;
 
+        private int capacity;
+              
         public Garage(int aCapacity)
         {
             capacity = aCapacity;
