@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace Garage1
 {
@@ -10,10 +9,10 @@ namespace Garage1
 
         private int capacity;
               
-        public Garage(int aCapacity)
+        public Garage(int capacity)
         {
-            capacity = aCapacity;
-            vehicles = new Vehicle[capacity];
+            this.capacity = capacity;
+            vehicles = new Vehicle[this.capacity];
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -24,6 +23,16 @@ namespace Garage1
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public void AddTo(Vehicle vehicle)
+        {
+            
+        }
+
+        public void RemoveFrom(Vehicle vehicle)
+        {
+
         }
     }
 }
