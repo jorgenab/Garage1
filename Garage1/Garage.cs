@@ -16,7 +16,7 @@ namespace Garage1
         {
             this.capacity = capacity;
             vehicles = new T[this.capacity];
-            vechiclesInGarage = 0;
+            VehiclesInGarage = 0;
         }
 
         public IEnumerator<T> GetEnumerator()
