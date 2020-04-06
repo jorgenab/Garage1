@@ -1,18 +1,16 @@
-﻿using System.Drawing;
-
-namespace Garage1
+﻿namespace Garage1
 {
     internal class Vehicle
     {
         public string RegNumber { get; set; }
         public Color Color { get; set; }
-        public int NrOfWheels { get; set; }
+        public int NumberOfWheels { get; set; }
 
-        public Vehicle(string regNumber, Color color, int nrOfWheels)
+        public Vehicle(string regNumber, Color color, int numberOfWheels)
         {
             RegNumber = regNumber;
             Color = color;
-            NrOfWheels = nrOfWheels;
+            NumberOfWheels = numberOfWheels;
         }
     }
 }
