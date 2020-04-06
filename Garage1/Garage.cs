@@ -17,19 +17,24 @@ namespace Garage1
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new System.NotImplementedException();
+            foreach (var vehicle in vehicles)
+            {
+                yield return vehicle;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return GetEnumerator();
+           return this.GetEnumerator();
         }
 
+        // Adds a Vehicle to the garage
         public void AddTo(Vehicle vehicle)
         {
             
         }
 
+        // Removes a Vehicle from the garage
         public void RemoveFrom(Vehicle vehicle)
         {
 
