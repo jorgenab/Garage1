@@ -40,7 +40,7 @@ namespace Garage1
         {
             if (!GarageFull())
             {
-                for (int vehicleIndex = 0; vehicleIndex < VehiclesInGarage; vehicleIndex++)
+                for (int vehicleIndex = 0; vehicleIndex < capacity; vehicleIndex++)
                 {
                     if (vehicles[vehicleIndex] == null)
                     {
@@ -65,7 +65,7 @@ namespace Garage1
         {
             if (!GarageEmpty())
             {
-                for (int vehicleIndex = 0; vehicleIndex < VehiclesInGarage; vehicleIndex++)
+                for (int vehicleIndex = 0; vehicleIndex < capacity; vehicleIndex++)
                 {
                     if (vehicles[vehicleIndex] == vehicle)
                     {
