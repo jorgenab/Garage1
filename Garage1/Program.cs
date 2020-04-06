@@ -6,7 +6,7 @@ namespace Garage1
     {
         static void Main(string[] args)
         {
-            Garage<Vehicle> garage = new Garage<Vehicle>();
+            Garage<Vehicle> garage = new Garage<Vehicle>(10);
             UserInterface ui = new UserInterface();
             GarageHandler garageHandler = new GarageHandler();
             IHandler iHandler;
